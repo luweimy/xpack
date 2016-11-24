@@ -1,0 +1,14 @@
+{
+  "search_sources_dir_root_list":   ["../src"],
+  "search_sources_ignore_dir_list": [],
+  "search_sources_extension_list":  ["c", "cpp", "cc", "cxx", "C"],
+  "search_headers_extension_list":  ["h", "hpp"],
+  "build_target_name": "bin/xpack",
+  "build_object_dir":"obj/",
+  "build_compiler_cc": "gcc",
+  "build_compiler_ccflags": "-g -Wall",
+  "build_compiler_cxx": "g++",
+  "build_compiler_cxxflags": "-g -Wall -std=c++11 -D_FILE_OFFSET_BITS=64",
+  "build_compiler_link": "g++",
+  "build_compiler_linkflags": "-g -Wall -std=c++11 -D_FILE_OFFSET_BITS=64"
+}

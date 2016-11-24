@@ -1,0 +1,901 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		530243D01D12E9D6002A9130 /* test-block.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 530243C81D12E9D6002A9130 /* test-block.cpp */; };
+		530243D11D12E9D6002A9130 /* test-hash.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 530243C91D12E9D6002A9130 /* test-hash.cpp */; };
+		530243D31D12E9D6002A9130 /* test-name.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 530243CB1D12E9D6002A9130 /* test-name.cpp */; };
+		530243D41D12E9D6002A9130 /* test-signature.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 530243CC1D12E9D6002A9130 /* test-signature.cpp */; };
+		530243D71D12E9D6002A9130 /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 530243CF1D12E9D6002A9130 /* test.cpp */; };
+		533D8BAA1D0F8E08003E2C62 /* torch-memorypool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 533D8BA81D0F8E08003E2C62 /* torch-memorypool.cpp */; };
+		5343B4551D0EDEF7001CC608 /* shell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5343B3A51D0EDEF7001CC608 /* shell.cpp */; };
+		5343B4561D0EDEF7001CC608 /* torch-collection-hashmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5343B3A91D0EDEF7001CC608 /* torch-collection-hashmap.cpp */; };
+		5343B4571D0EDEF7001CC608 /* torch-collection-iterator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5343B3AB1D0EDEF7001CC608 /* torch-collection-iterator.cpp */; };
+		5343B4581D0EDEF7001CC608 /* torch-collection-sortedset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5343B3AD1D0EDEF7001CC608 /* torch-collection-sortedset.cpp */; };
+		5343B4591D0EDEF7001CC608 /* torch-collection-util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5343B3AF1D0EDEF7001CC608 /* torch-collection-util.cpp */; };
+		5343B45A1D0EDEF7001CC608 /* torch-compress-zip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5343B3B21D0EDEF7001CC608 /* torch-compress-zip.cpp */; };
+		5343B45B1D0EDEF7001CC608 /* torch-allocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5343B3B51D0EDEF7001CC608 /* torch-allocator.cpp */; };
+		5343B45C1D0EDEF7001CC608 /* torch-base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5343B3B71D0EDEF7001CC608 /* torch-base.cpp */; };
+		5343B45D1D0EDEF7001CC608 /* torch-endian.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5343B3BA1D0EDEF7001CC608 /* torch-endian.cpp */; };
+		5343B45E1D0EDEF7001CC608 /* torch-hash.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5343B3BC1D0EDEF7001CC608 /* torch-hash.cpp */; };
+		5343B45F1D0EDEF7001CC608 /* torch-crypto-crc32.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5343B3BF1D0EDEF7001CC608 /* torch-crypto-crc32.cpp */; };
+		5343B4601D0EDEF7001CC608 /* torch-crypto-rc4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5343B3C11D0EDEF7001CC608 /* torch-crypto-rc4.cpp */; };
+		5343B4611D0EDEF7001CC608 /* lookup3.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B3C61D0EDEF7001CC608 /* lookup3.c */; };
+		5343B4621D0EDEF7001CC608 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B3C91D0EDEF7001CC608 /* ioapi.c */; };
+		5343B4631D0EDEF7001CC608 /* ioapi_buf.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B3CB1D0EDEF7001CC608 /* ioapi_buf.c */; };
+		5343B4641D0EDEF7001CC608 /* ioapi_mem.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B3CD1D0EDEF7001CC608 /* ioapi_mem.c */; };
+		5343B4651D0EDEF7001CC608 /* iowin32.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B3CF1D0EDEF7001CC608 /* iowin32.c */; };
+		5343B4661D0EDEF7001CC608 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 5343B3D11D0EDEF7001CC608 /* README.md */; };
+		5343B4671D0EDEF7001CC608 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B3D21D0EDEF7001CC608 /* unzip.c */; };
+		5343B4681D0EDEF7001CC608 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B3D41D0EDEF7001CC608 /* zip.c */; };
+		5343B4691D0EDEF7001CC608 /* wildcard.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B3D71D0EDEF7001CC608 /* wildcard.c */; };
+		5343B46A1D0EDEF7001CC608 /* xxhash.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B3DB1D0EDEF7001CC608 /* xxhash.c */; };
+		5343B46B1D0EDEF7001CC608 /* aes.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B3F91D0EDEF7001CC608 /* aes.c */; };
+		5343B46C1D0EDEF7001CC608 /* arc4.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B3FA1D0EDEF7001CC608 /* arc4.c */; };
+		5343B46D1D0EDEF7001CC608 /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B3FB1D0EDEF7001CC608 /* base64.c */; };
+		5343B46E1D0EDEF7001CC608 /* bignum.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B3FC1D0EDEF7001CC608 /* bignum.c */; };
+		5343B46F1D0EDEF7001CC608 /* certs.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B3FD1D0EDEF7001CC608 /* certs.c */; };
+		5343B4701D0EDEF7001CC608 /* debug.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B3FE1D0EDEF7001CC608 /* debug.c */; };
+		5343B4711D0EDEF7001CC608 /* des.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B3FF1D0EDEF7001CC608 /* des.c */; };
+		5343B4721D0EDEF7001CC608 /* dhm.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B4001D0EDEF7001CC608 /* dhm.c */; };
+		5343B4731D0EDEF7001CC608 /* havege.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B4011D0EDEF7001CC608 /* havege.c */; };
+		5343B4741D0EDEF7001CC608 /* md2.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B4021D0EDEF7001CC608 /* md2.c */; };
+		5343B4751D0EDEF7001CC608 /* md4.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B4031D0EDEF7001CC608 /* md4.c */; };
+		5343B4761D0EDEF7001CC608 /* md5.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B4041D0EDEF7001CC608 /* md5.c */; };
+		5343B4771D0EDEF7001CC608 /* net.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B4051D0EDEF7001CC608 /* net.c */; };
+		5343B4781D0EDEF7001CC608 /* padlock.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B4061D0EDEF7001CC608 /* padlock.c */; };
+		5343B4791D0EDEF7001CC608 /* rsa.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B4071D0EDEF7001CC608 /* rsa.c */; };
+		5343B47A1D0EDEF7001CC608 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B4081D0EDEF7001CC608 /* sha1.c */; };
+		5343B47B1D0EDEF7001CC608 /* sha2.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B4091D0EDEF7001CC608 /* sha2.c */; };
+		5343B47C1D0EDEF7001CC608 /* sha4.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B40A1D0EDEF7001CC608 /* sha4.c */; };
+		5343B47D1D0EDEF7001CC608 /* ssl_cli.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B40B1D0EDEF7001CC608 /* ssl_cli.c */; };
+		5343B47E1D0EDEF7001CC608 /* ssl_srv.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B40C1D0EDEF7001CC608 /* ssl_srv.c */; };
+		5343B47F1D0EDEF7001CC608 /* ssl_tls.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B40D1D0EDEF7001CC608 /* ssl_tls.c */; };
+		5343B4801D0EDEF7001CC608 /* timing.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B40E1D0EDEF7001CC608 /* timing.c */; };
+		5343B4811D0EDEF7001CC608 /* x509parse.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B40F1D0EDEF7001CC608 /* x509parse.c */; };
+		5343B4821D0EDEF7001CC608 /* adler32.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B4111D0EDEF7001CC608 /* adler32.c */; };
+		5343B4831D0EDEF7001CC608 /* deflate.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B4131D0EDEF7001CC608 /* deflate.c */; };
+		5343B4841D0EDEF7001CC608 /* gzclose.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B4151D0EDEF7001CC608 /* gzclose.c */; };
+		5343B4851D0EDEF7001CC608 /* gzlib.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B4171D0EDEF7001CC608 /* gzlib.c */; };
+		5343B4861D0EDEF7001CC608 /* gzread.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B4181D0EDEF7001CC608 /* gzread.c */; };
+		5343B4871D0EDEF7001CC608 /* gzwrite.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B4191D0EDEF7001CC608 /* gzwrite.c */; };
+		5343B4881D0EDEF7001CC608 /* infback.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B41A1D0EDEF7001CC608 /* infback.c */; };
+		5343B4891D0EDEF7001CC608 /* inffast.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B41B1D0EDEF7001CC608 /* inffast.c */; };
+		5343B48A1D0EDEF7001CC608 /* inflate.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B41E1D0EDEF7001CC608 /* inflate.c */; };
+		5343B48B1D0EDEF7001CC608 /* inftrees.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B4201D0EDEF7001CC608 /* inftrees.c */; };
+		5343B48C1D0EDEF7001CC608 /* trees.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B4231D0EDEF7001CC608 /* trees.c */; };
+		5343B48D1D0EDEF7001CC608 /* uncompr.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B4251D0EDEF7001CC608 /* uncompr.c */; };
+		5343B48E1D0EDEF7001CC608 /* zcompress.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B4261D0EDEF7001CC608 /* zcompress.c */; };
+		5343B48F1D0EDEF7001CC608 /* zcrc32.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B4281D0EDEF7001CC608 /* zcrc32.c */; };
+		5343B4901D0EDEF7001CC608 /* zutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 5343B42A1D0EDEF7001CC608 /* zutil.c */; };
+		5343B4911D0EDEF7001CC608 /* torch-arguments.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5343B42C1D0EDEF7001CC608 /* torch-arguments.cpp */; };
+		5343B4921D0EDEF7001CC608 /* torch-console.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5343B42E1D0EDEF7001CC608 /* torch-console.cpp */; };
+		5343B4931D0EDEF7001CC608 /* torch-data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5343B4301D0EDEF7001CC608 /* torch-data.cpp */; };
+		5343B4941D0EDEF7001CC608 /* torch-file.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5343B4321D0EDEF7001CC608 /* torch-file.cpp */; };
+		5343B4951D0EDEF7001CC608 /* torch-path.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5343B4341D0EDEF7001CC608 /* torch-path.cpp */; };
+		5343B4961D0EDEF7001CC608 /* torch-string.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5343B4361D0EDEF7001CC608 /* torch-string.cpp */; };
+		5343B4971D0EDEF7001CC608 /* torch-util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5343B4381D0EDEF7001CC608 /* torch-util.cpp */; };
+		5343B4981D0EDEF7001CC608 /* torch-wildcard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5343B43A1D0EDEF7001CC608 /* torch-wildcard.cpp */; };
+		5343B4991D0EDEF7001CC608 /* xpack-base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5343B43D1D0EDEF7001CC608 /* xpack-base.cpp */; };
+		5343B49A1D0EDEF7001CC608 /* xpack-block.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5343B43F1D0EDEF7001CC608 /* xpack-block.cpp */; };
+		5343B49B1D0EDEF7001CC608 /* xpack-content.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5343B4411D0EDEF7001CC608 /* xpack-content.cpp */; };
+		5343B49C1D0EDEF7001CC608 /* xpack-context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5343B4431D0EDEF7001CC608 /* xpack-context.cpp */; };
+		5343B49D1D0EDEF7001CC608 /* xpack-util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5343B4461D0EDEF7001CC608 /* xpack-util.cpp */; };
+		5343B49E1D0EDEF7001CC608 /* xpack-hash.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5343B4481D0EDEF7001CC608 /* xpack-hash.cpp */; };
+		5343B49F1D0EDEF7001CC608 /* xpack-header.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5343B44A1D0EDEF7001CC608 /* xpack-header.cpp */; };
+		5343B4A01D0EDEF7001CC608 /* xpack-name.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5343B44C1D0EDEF7001CC608 /* xpack-name.cpp */; };
+		5343B4A11D0EDEF7001CC608 /* xpack-signature.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5343B44E1D0EDEF7001CC608 /* xpack-signature.cpp */; };
+		5343B4A21D0EDEF7001CC608 /* xpack-stream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5343B4501D0EDEF7001CC608 /* xpack-stream.cpp */; };
+		5343B4A31D0EDEF7001CC608 /* xpack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5343B4521D0EDEF7001CC608 /* xpack.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		53FAC1C71CF02E91000243BA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		530243C81D12E9D6002A9130 /* test-block.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "test-block.cpp"; sourceTree = "<group>"; };
+		530243C91D12E9D6002A9130 /* test-hash.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "test-hash.cpp"; sourceTree = "<group>"; };
+		530243CB1D12E9D6002A9130 /* test-name.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "test-name.cpp"; sourceTree = "<group>"; };
+		530243CC1D12E9D6002A9130 /* test-signature.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "test-signature.cpp"; sourceTree = "<group>"; };
+		530243CF1D12E9D6002A9130 /* test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test.cpp; sourceTree = "<group>"; };
+		533D8BA81D0F8E08003E2C62 /* torch-memorypool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "torch-memorypool.cpp"; sourceTree = "<group>"; };
+		533D8BA91D0F8E08003E2C62 /* torch-memorypool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "torch-memorypool.h"; sourceTree = "<group>"; };
+		534332151D13B43200F10A55 /* test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
+		5343B3A51D0EDEF7001CC608 /* shell.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shell.cpp; sourceTree = "<group>"; };
+		5343B3A91D0EDEF7001CC608 /* torch-collection-hashmap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "torch-collection-hashmap.cpp"; sourceTree = "<group>"; };
+		5343B3AA1D0EDEF7001CC608 /* torch-collection-hashmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "torch-collection-hashmap.h"; sourceTree = "<group>"; };
+		5343B3AB1D0EDEF7001CC608 /* torch-collection-iterator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "torch-collection-iterator.cpp"; sourceTree = "<group>"; };
+		5343B3AC1D0EDEF7001CC608 /* torch-collection-iterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "torch-collection-iterator.h"; sourceTree = "<group>"; };
+		5343B3AD1D0EDEF7001CC608 /* torch-collection-sortedset.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "torch-collection-sortedset.cpp"; sourceTree = "<group>"; };
+		5343B3AE1D0EDEF7001CC608 /* torch-collection-sortedset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "torch-collection-sortedset.h"; sourceTree = "<group>"; };
+		5343B3AF1D0EDEF7001CC608 /* torch-collection-util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "torch-collection-util.cpp"; sourceTree = "<group>"; };
+		5343B3B01D0EDEF7001CC608 /* torch-collection-util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "torch-collection-util.h"; sourceTree = "<group>"; };
+		5343B3B21D0EDEF7001CC608 /* torch-compress-zip.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "torch-compress-zip.cpp"; sourceTree = "<group>"; };
+		5343B3B31D0EDEF7001CC608 /* torch-compress-zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "torch-compress-zip.h"; sourceTree = "<group>"; };
+		5343B3B51D0EDEF7001CC608 /* torch-allocator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "torch-allocator.cpp"; sourceTree = "<group>"; };
+		5343B3B61D0EDEF7001CC608 /* torch-allocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "torch-allocator.h"; sourceTree = "<group>"; };
+		5343B3B71D0EDEF7001CC608 /* torch-base.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "torch-base.cpp"; sourceTree = "<group>"; };
+		5343B3B81D0EDEF7001CC608 /* torch-base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "torch-base.h"; sourceTree = "<group>"; };
+		5343B3B91D0EDEF7001CC608 /* torch-def.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "torch-def.h"; sourceTree = "<group>"; };
+		5343B3BA1D0EDEF7001CC608 /* torch-endian.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "torch-endian.cpp"; sourceTree = "<group>"; };
+		5343B3BB1D0EDEF7001CC608 /* torch-endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "torch-endian.h"; sourceTree = "<group>"; };
+		5343B3BC1D0EDEF7001CC608 /* torch-hash.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "torch-hash.cpp"; sourceTree = "<group>"; };
+		5343B3BD1D0EDEF7001CC608 /* torch-hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "torch-hash.h"; sourceTree = "<group>"; };
+		5343B3BF1D0EDEF7001CC608 /* torch-crypto-crc32.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "torch-crypto-crc32.cpp"; sourceTree = "<group>"; };
+		5343B3C01D0EDEF7001CC608 /* torch-crypto-crc32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "torch-crypto-crc32.h"; sourceTree = "<group>"; };
+		5343B3C11D0EDEF7001CC608 /* torch-crypto-rc4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "torch-crypto-rc4.cpp"; sourceTree = "<group>"; };
+		5343B3C21D0EDEF7001CC608 /* torch-crypto-rc4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "torch-crypto-rc4.h"; sourceTree = "<group>"; };
+		5343B3C51D0EDEF7001CC608 /* lookup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lookup.h; sourceTree = "<group>"; };
+		5343B3C61D0EDEF7001CC608 /* lookup3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lookup3.c; sourceTree = "<group>"; };
+		5343B3C81D0EDEF7001CC608 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		5343B3C91D0EDEF7001CC608 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		5343B3CA1D0EDEF7001CC608 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		5343B3CB1D0EDEF7001CC608 /* ioapi_buf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi_buf.c; sourceTree = "<group>"; };
+		5343B3CC1D0EDEF7001CC608 /* ioapi_buf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi_buf.h; sourceTree = "<group>"; };
+		5343B3CD1D0EDEF7001CC608 /* ioapi_mem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi_mem.c; sourceTree = "<group>"; };
+		5343B3CE1D0EDEF7001CC608 /* ioapi_mem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi_mem.h; sourceTree = "<group>"; };
+		5343B3CF1D0EDEF7001CC608 /* iowin32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iowin32.c; sourceTree = "<group>"; };
+		5343B3D01D0EDEF7001CC608 /* iowin32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iowin32.h; sourceTree = "<group>"; };
+		5343B3D11D0EDEF7001CC608 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5343B3D21D0EDEF7001CC608 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		5343B3D31D0EDEF7001CC608 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		5343B3D41D0EDEF7001CC608 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		5343B3D51D0EDEF7001CC608 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		5343B3D71D0EDEF7001CC608 /* wildcard.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wildcard.c; sourceTree = "<group>"; };
+		5343B3D81D0EDEF7001CC608 /* wildcard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wildcard.h; sourceTree = "<group>"; };
+		5343B3DA1D0EDEF7001CC608 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		5343B3DB1D0EDEF7001CC608 /* xxhash.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xxhash.c; sourceTree = "<group>"; };
+		5343B3DC1D0EDEF7001CC608 /* xxhash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xxhash.h; sourceTree = "<group>"; };
+		5343B3DE1D0EDEF7001CC608 /* gpl-2.0.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gpl-2.0.txt"; sourceTree = "<group>"; };
+		5343B3E01D0EDEF7001CC608 /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		5343B3E11D0EDEF7001CC608 /* arc4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arc4.h; sourceTree = "<group>"; };
+		5343B3E21D0EDEF7001CC608 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
+		5343B3E31D0EDEF7001CC608 /* bignum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bignum.h; sourceTree = "<group>"; };
+		5343B3E41D0EDEF7001CC608 /* bn_mul.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bn_mul.h; sourceTree = "<group>"; };
+		5343B3E51D0EDEF7001CC608 /* certs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = certs.h; sourceTree = "<group>"; };
+		5343B3E61D0EDEF7001CC608 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		5343B3E71D0EDEF7001CC608 /* debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = debug.h; sourceTree = "<group>"; };
+		5343B3E81D0EDEF7001CC608 /* des.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = des.h; sourceTree = "<group>"; };
+		5343B3E91D0EDEF7001CC608 /* dhm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dhm.h; sourceTree = "<group>"; };
+		5343B3EA1D0EDEF7001CC608 /* havege.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = havege.h; sourceTree = "<group>"; };
+		5343B3EB1D0EDEF7001CC608 /* md2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md2.h; sourceTree = "<group>"; };
+		5343B3EC1D0EDEF7001CC608 /* md4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md4.h; sourceTree = "<group>"; };
+		5343B3ED1D0EDEF7001CC608 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
+		5343B3EE1D0EDEF7001CC608 /* net.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = net.h; sourceTree = "<group>"; };
+		5343B3EF1D0EDEF7001CC608 /* openssl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = openssl.h; sourceTree = "<group>"; };
+		5343B3F01D0EDEF7001CC608 /* padlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = padlock.h; sourceTree = "<group>"; };
+		5343B3F11D0EDEF7001CC608 /* rsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rsa.h; sourceTree = "<group>"; };
+		5343B3F21D0EDEF7001CC608 /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha1.h; sourceTree = "<group>"; };
+		5343B3F31D0EDEF7001CC608 /* sha2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha2.h; sourceTree = "<group>"; };
+		5343B3F41D0EDEF7001CC608 /* sha4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha4.h; sourceTree = "<group>"; };
+		5343B3F51D0EDEF7001CC608 /* ssl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl.h; sourceTree = "<group>"; };
+		5343B3F61D0EDEF7001CC608 /* timing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timing.h; sourceTree = "<group>"; };
+		5343B3F71D0EDEF7001CC608 /* x509.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509.h; sourceTree = "<group>"; };
+		5343B3F91D0EDEF7001CC608 /* aes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aes.c; sourceTree = "<group>"; };
+		5343B3FA1D0EDEF7001CC608 /* arc4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = arc4.c; sourceTree = "<group>"; };
+		5343B3FB1D0EDEF7001CC608 /* base64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = base64.c; sourceTree = "<group>"; };
+		5343B3FC1D0EDEF7001CC608 /* bignum.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bignum.c; sourceTree = "<group>"; };
+		5343B3FD1D0EDEF7001CC608 /* certs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = certs.c; sourceTree = "<group>"; };
+		5343B3FE1D0EDEF7001CC608 /* debug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = debug.c; sourceTree = "<group>"; };
+		5343B3FF1D0EDEF7001CC608 /* des.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = des.c; sourceTree = "<group>"; };
+		5343B4001D0EDEF7001CC608 /* dhm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dhm.c; sourceTree = "<group>"; };
+		5343B4011D0EDEF7001CC608 /* havege.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = havege.c; sourceTree = "<group>"; };
+		5343B4021D0EDEF7001CC608 /* md2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = md2.c; sourceTree = "<group>"; };
+		5343B4031D0EDEF7001CC608 /* md4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = md4.c; sourceTree = "<group>"; };
+		5343B4041D0EDEF7001CC608 /* md5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = md5.c; sourceTree = "<group>"; };
+		5343B4051D0EDEF7001CC608 /* net.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = net.c; sourceTree = "<group>"; };
+		5343B4061D0EDEF7001CC608 /* padlock.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = padlock.c; sourceTree = "<group>"; };
+		5343B4071D0EDEF7001CC608 /* rsa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rsa.c; sourceTree = "<group>"; };
+		5343B4081D0EDEF7001CC608 /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha1.c; sourceTree = "<group>"; };
+		5343B4091D0EDEF7001CC608 /* sha2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha2.c; sourceTree = "<group>"; };
+		5343B40A1D0EDEF7001CC608 /* sha4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha4.c; sourceTree = "<group>"; };
+		5343B40B1D0EDEF7001CC608 /* ssl_cli.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ssl_cli.c; sourceTree = "<group>"; };
+		5343B40C1D0EDEF7001CC608 /* ssl_srv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ssl_srv.c; sourceTree = "<group>"; };
+		5343B40D1D0EDEF7001CC608 /* ssl_tls.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ssl_tls.c; sourceTree = "<group>"; };
+		5343B40E1D0EDEF7001CC608 /* timing.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = timing.c; sourceTree = "<group>"; };
+		5343B40F1D0EDEF7001CC608 /* x509parse.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = x509parse.c; sourceTree = "<group>"; };
+		5343B4111D0EDEF7001CC608 /* adler32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = adler32.c; sourceTree = "<group>"; };
+		5343B4121D0EDEF7001CC608 /* crc32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crc32.h; sourceTree = "<group>"; };
+		5343B4131D0EDEF7001CC608 /* deflate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = deflate.c; sourceTree = "<group>"; };
+		5343B4141D0EDEF7001CC608 /* deflate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deflate.h; sourceTree = "<group>"; };
+		5343B4151D0EDEF7001CC608 /* gzclose.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gzclose.c; sourceTree = "<group>"; };
+		5343B4161D0EDEF7001CC608 /* gzguts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gzguts.h; sourceTree = "<group>"; };
+		5343B4171D0EDEF7001CC608 /* gzlib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gzlib.c; sourceTree = "<group>"; };
+		5343B4181D0EDEF7001CC608 /* gzread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gzread.c; sourceTree = "<group>"; };
+		5343B4191D0EDEF7001CC608 /* gzwrite.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gzwrite.c; sourceTree = "<group>"; };
+		5343B41A1D0EDEF7001CC608 /* infback.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = infback.c; sourceTree = "<group>"; };
+		5343B41B1D0EDEF7001CC608 /* inffast.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inffast.c; sourceTree = "<group>"; };
+		5343B41C1D0EDEF7001CC608 /* inffast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inffast.h; sourceTree = "<group>"; };
+		5343B41D1D0EDEF7001CC608 /* inffixed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inffixed.h; sourceTree = "<group>"; };
+		5343B41E1D0EDEF7001CC608 /* inflate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inflate.c; sourceTree = "<group>"; };
+		5343B41F1D0EDEF7001CC608 /* inflate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inflate.h; sourceTree = "<group>"; };
+		5343B4201D0EDEF7001CC608 /* inftrees.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inftrees.c; sourceTree = "<group>"; };
+		5343B4211D0EDEF7001CC608 /* inftrees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inftrees.h; sourceTree = "<group>"; };
+		5343B4221D0EDEF7001CC608 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		5343B4231D0EDEF7001CC608 /* trees.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = trees.c; sourceTree = "<group>"; };
+		5343B4241D0EDEF7001CC608 /* trees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trees.h; sourceTree = "<group>"; };
+		5343B4251D0EDEF7001CC608 /* uncompr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = uncompr.c; sourceTree = "<group>"; };
+		5343B4261D0EDEF7001CC608 /* zcompress.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zcompress.c; sourceTree = "<group>"; };
+		5343B4271D0EDEF7001CC608 /* zconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zconf.h; sourceTree = "<group>"; };
+		5343B4281D0EDEF7001CC608 /* zcrc32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zcrc32.c; sourceTree = "<group>"; };
+		5343B4291D0EDEF7001CC608 /* zlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zlib.h; sourceTree = "<group>"; };
+		5343B42A1D0EDEF7001CC608 /* zutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zutil.c; sourceTree = "<group>"; };
+		5343B42B1D0EDEF7001CC608 /* zutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zutil.h; sourceTree = "<group>"; };
+		5343B42C1D0EDEF7001CC608 /* torch-arguments.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "torch-arguments.cpp"; sourceTree = "<group>"; };
+		5343B42D1D0EDEF7001CC608 /* torch-arguments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "torch-arguments.h"; sourceTree = "<group>"; };
+		5343B42E1D0EDEF7001CC608 /* torch-console.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "torch-console.cpp"; sourceTree = "<group>"; };
+		5343B42F1D0EDEF7001CC608 /* torch-console.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "torch-console.h"; sourceTree = "<group>"; };
+		5343B4301D0EDEF7001CC608 /* torch-data.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "torch-data.cpp"; sourceTree = "<group>"; };
+		5343B4311D0EDEF7001CC608 /* torch-data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "torch-data.h"; sourceTree = "<group>"; };
+		5343B4321D0EDEF7001CC608 /* torch-file.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "torch-file.cpp"; sourceTree = "<group>"; };
+		5343B4331D0EDEF7001CC608 /* torch-file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "torch-file.h"; sourceTree = "<group>"; };
+		5343B4341D0EDEF7001CC608 /* torch-path.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "torch-path.cpp"; sourceTree = "<group>"; };
+		5343B4351D0EDEF7001CC608 /* torch-path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "torch-path.h"; sourceTree = "<group>"; };
+		5343B4361D0EDEF7001CC608 /* torch-string.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "torch-string.cpp"; sourceTree = "<group>"; };
+		5343B4371D0EDEF7001CC608 /* torch-string.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "torch-string.h"; sourceTree = "<group>"; };
+		5343B4381D0EDEF7001CC608 /* torch-util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "torch-util.cpp"; sourceTree = "<group>"; };
+		5343B4391D0EDEF7001CC608 /* torch-util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "torch-util.h"; sourceTree = "<group>"; };
+		5343B43A1D0EDEF7001CC608 /* torch-wildcard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "torch-wildcard.cpp"; sourceTree = "<group>"; };
+		5343B43B1D0EDEF7001CC608 /* torch-wildcard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "torch-wildcard.h"; sourceTree = "<group>"; };
+		5343B43C1D0EDEF7001CC608 /* torch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = torch.h; sourceTree = "<group>"; };
+		5343B43D1D0EDEF7001CC608 /* xpack-base.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "xpack-base.cpp"; sourceTree = "<group>"; };
+		5343B43E1D0EDEF7001CC608 /* xpack-base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "xpack-base.h"; sourceTree = "<group>"; };
+		5343B43F1D0EDEF7001CC608 /* xpack-block.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "xpack-block.cpp"; sourceTree = "<group>"; };
+		5343B4401D0EDEF7001CC608 /* xpack-block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "xpack-block.h"; sourceTree = "<group>"; };
+		5343B4411D0EDEF7001CC608 /* xpack-content.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "xpack-content.cpp"; sourceTree = "<group>"; };
+		5343B4421D0EDEF7001CC608 /* xpack-content.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "xpack-content.h"; sourceTree = "<group>"; };
+		5343B4431D0EDEF7001CC608 /* xpack-context.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "xpack-context.cpp"; sourceTree = "<group>"; };
+		5343B4441D0EDEF7001CC608 /* xpack-context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "xpack-context.h"; sourceTree = "<group>"; };
+		5343B4451D0EDEF7001CC608 /* xpack-def.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "xpack-def.h"; sourceTree = "<group>"; };
+		5343B4461D0EDEF7001CC608 /* xpack-util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "xpack-util.cpp"; sourceTree = "<group>"; };
+		5343B4471D0EDEF7001CC608 /* xpack-util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "xpack-util.h"; sourceTree = "<group>"; };
+		5343B4481D0EDEF7001CC608 /* xpack-hash.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "xpack-hash.cpp"; sourceTree = "<group>"; };
+		5343B4491D0EDEF7001CC608 /* xpack-hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "xpack-hash.h"; sourceTree = "<group>"; };
+		5343B44A1D0EDEF7001CC608 /* xpack-header.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "xpack-header.cpp"; sourceTree = "<group>"; };
+		5343B44B1D0EDEF7001CC608 /* xpack-header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "xpack-header.h"; sourceTree = "<group>"; };
+		5343B44C1D0EDEF7001CC608 /* xpack-name.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "xpack-name.cpp"; sourceTree = "<group>"; };
+		5343B44D1D0EDEF7001CC608 /* xpack-name.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "xpack-name.h"; sourceTree = "<group>"; };
+		5343B44E1D0EDEF7001CC608 /* xpack-signature.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "xpack-signature.cpp"; sourceTree = "<group>"; };
+		5343B44F1D0EDEF7001CC608 /* xpack-signature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "xpack-signature.h"; sourceTree = "<group>"; };
+		5343B4501D0EDEF7001CC608 /* xpack-stream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "xpack-stream.cpp"; sourceTree = "<group>"; };
+		5343B4511D0EDEF7001CC608 /* xpack-stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "xpack-stream.h"; sourceTree = "<group>"; };
+		5343B4521D0EDEF7001CC608 /* xpack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = xpack.cpp; sourceTree = "<group>"; };
+		5343B4531D0EDEF7001CC608 /* xpack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xpack.h; sourceTree = "<group>"; };
+		53FAC1C91CF02E91000243BA /* xpack */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = xpack; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		53FAC1C61CF02E91000243BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		530243C71D12E9D6002A9130 /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				530243CC1D12E9D6002A9130 /* test-signature.cpp */,
+				530243C81D12E9D6002A9130 /* test-block.cpp */,
+				530243C91D12E9D6002A9130 /* test-hash.cpp */,
+				530243CB1D12E9D6002A9130 /* test-name.cpp */,
+				530243CF1D12E9D6002A9130 /* test.cpp */,
+				534332151D13B43200F10A55 /* test.h */,
+			);
+			path = tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		5343B3A31D0EDEF7001CC608 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				5343B3A51D0EDEF7001CC608 /* shell.cpp */,
+				5343B3A61D0EDEF7001CC608 /* xpack */,
+			);
+			path = src;
+			sourceTree = SOURCE_ROOT;
+		};
+		5343B3A61D0EDEF7001CC608 /* xpack */ = {
+			isa = PBXGroup;
+			children = (
+				5343B3A71D0EDEF7001CC608 /* torch */,
+				5343B43D1D0EDEF7001CC608 /* xpack-base.cpp */,
+				5343B43E1D0EDEF7001CC608 /* xpack-base.h */,
+				5343B43F1D0EDEF7001CC608 /* xpack-block.cpp */,
+				5343B4401D0EDEF7001CC608 /* xpack-block.h */,
+				5343B4411D0EDEF7001CC608 /* xpack-content.cpp */,
+				5343B4421D0EDEF7001CC608 /* xpack-content.h */,
+				5343B4431D0EDEF7001CC608 /* xpack-context.cpp */,
+				5343B4441D0EDEF7001CC608 /* xpack-context.h */,
+				5343B4451D0EDEF7001CC608 /* xpack-def.h */,
+				5343B4461D0EDEF7001CC608 /* xpack-util.cpp */,
+				5343B4471D0EDEF7001CC608 /* xpack-util.h */,
+				5343B4481D0EDEF7001CC608 /* xpack-hash.cpp */,
+				5343B4491D0EDEF7001CC608 /* xpack-hash.h */,
+				5343B44A1D0EDEF7001CC608 /* xpack-header.cpp */,
+				5343B44B1D0EDEF7001CC608 /* xpack-header.h */,
+				5343B44C1D0EDEF7001CC608 /* xpack-name.cpp */,
+				5343B44D1D0EDEF7001CC608 /* xpack-name.h */,
+				5343B44E1D0EDEF7001CC608 /* xpack-signature.cpp */,
+				5343B44F1D0EDEF7001CC608 /* xpack-signature.h */,
+				5343B4501D0EDEF7001CC608 /* xpack-stream.cpp */,
+				5343B4511D0EDEF7001CC608 /* xpack-stream.h */,
+				5343B4521D0EDEF7001CC608 /* xpack.cpp */,
+				5343B4531D0EDEF7001CC608 /* xpack.h */,
+			);
+			path = xpack;
+			sourceTree = "<group>";
+		};
+		5343B3A71D0EDEF7001CC608 /* torch */ = {
+			isa = PBXGroup;
+			children = (
+				5343B3A81D0EDEF7001CC608 /* collection */,
+				5343B3B11D0EDEF7001CC608 /* compress */,
+				5343B3B41D0EDEF7001CC608 /* core */,
+				5343B3BE1D0EDEF7001CC608 /* crypto */,
+				5343B3C31D0EDEF7001CC608 /* deps */,
+				5343B42C1D0EDEF7001CC608 /* torch-arguments.cpp */,
+				5343B42D1D0EDEF7001CC608 /* torch-arguments.h */,
+				5343B42E1D0EDEF7001CC608 /* torch-console.cpp */,
+				5343B42F1D0EDEF7001CC608 /* torch-console.h */,
+				5343B4301D0EDEF7001CC608 /* torch-data.cpp */,
+				5343B4311D0EDEF7001CC608 /* torch-data.h */,
+				5343B4321D0EDEF7001CC608 /* torch-file.cpp */,
+				5343B4331D0EDEF7001CC608 /* torch-file.h */,
+				5343B4341D0EDEF7001CC608 /* torch-path.cpp */,
+				5343B4351D0EDEF7001CC608 /* torch-path.h */,
+				5343B4361D0EDEF7001CC608 /* torch-string.cpp */,
+				5343B4371D0EDEF7001CC608 /* torch-string.h */,
+				5343B4381D0EDEF7001CC608 /* torch-util.cpp */,
+				5343B4391D0EDEF7001CC608 /* torch-util.h */,
+				5343B43A1D0EDEF7001CC608 /* torch-wildcard.cpp */,
+				5343B43B1D0EDEF7001CC608 /* torch-wildcard.h */,
+				533D8BA81D0F8E08003E2C62 /* torch-memorypool.cpp */,
+				533D8BA91D0F8E08003E2C62 /* torch-memorypool.h */,
+				5343B43C1D0EDEF7001CC608 /* torch.h */,
+			);
+			path = torch;
+			sourceTree = "<group>";
+		};
+		5343B3A81D0EDEF7001CC608 /* collection */ = {
+			isa = PBXGroup;
+			children = (
+				5343B3A91D0EDEF7001CC608 /* torch-collection-hashmap.cpp */,
+				5343B3AA1D0EDEF7001CC608 /* torch-collection-hashmap.h */,
+				5343B3AB1D0EDEF7001CC608 /* torch-collection-iterator.cpp */,
+				5343B3AC1D0EDEF7001CC608 /* torch-collection-iterator.h */,
+				5343B3AD1D0EDEF7001CC608 /* torch-collection-sortedset.cpp */,
+				5343B3AE1D0EDEF7001CC608 /* torch-collection-sortedset.h */,
+				5343B3AF1D0EDEF7001CC608 /* torch-collection-util.cpp */,
+				5343B3B01D0EDEF7001CC608 /* torch-collection-util.h */,
+			);
+			path = collection;
+			sourceTree = "<group>";
+		};
+		5343B3B11D0EDEF7001CC608 /* compress */ = {
+			isa = PBXGroup;
+			children = (
+				5343B3B21D0EDEF7001CC608 /* torch-compress-zip.cpp */,
+				5343B3B31D0EDEF7001CC608 /* torch-compress-zip.h */,
+			);
+			path = compress;
+			sourceTree = "<group>";
+		};
+		5343B3B41D0EDEF7001CC608 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				5343B3B51D0EDEF7001CC608 /* torch-allocator.cpp */,
+				5343B3B61D0EDEF7001CC608 /* torch-allocator.h */,
+				5343B3B71D0EDEF7001CC608 /* torch-base.cpp */,
+				5343B3B81D0EDEF7001CC608 /* torch-base.h */,
+				5343B3B91D0EDEF7001CC608 /* torch-def.h */,
+				5343B3BA1D0EDEF7001CC608 /* torch-endian.cpp */,
+				5343B3BB1D0EDEF7001CC608 /* torch-endian.h */,
+				5343B3BC1D0EDEF7001CC608 /* torch-hash.cpp */,
+				5343B3BD1D0EDEF7001CC608 /* torch-hash.h */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		5343B3BE1D0EDEF7001CC608 /* crypto */ = {
+			isa = PBXGroup;
+			children = (
+				5343B3BF1D0EDEF7001CC608 /* torch-crypto-crc32.cpp */,
+				5343B3C01D0EDEF7001CC608 /* torch-crypto-crc32.h */,
+				5343B3C11D0EDEF7001CC608 /* torch-crypto-rc4.cpp */,
+				5343B3C21D0EDEF7001CC608 /* torch-crypto-rc4.h */,
+			);
+			path = crypto;
+			sourceTree = "<group>";
+		};
+		5343B3C31D0EDEF7001CC608 /* deps */ = {
+			isa = PBXGroup;
+			children = (
+				5343B3C41D0EDEF7001CC608 /* jenkins */,
+				5343B3C71D0EDEF7001CC608 /* minizip */,
+				5343B3D61D0EDEF7001CC608 /* wildcard */,
+				5343B3D91D0EDEF7001CC608 /* xxhash */,
+				5343B3DD1D0EDEF7001CC608 /* xyssl */,
+				5343B4101D0EDEF7001CC608 /* zlib */,
+			);
+			path = deps;
+			sourceTree = "<group>";
+		};
+		5343B3C41D0EDEF7001CC608 /* jenkins */ = {
+			isa = PBXGroup;
+			children = (
+				5343B3C51D0EDEF7001CC608 /* lookup.h */,
+				5343B3C61D0EDEF7001CC608 /* lookup3.c */,
+			);
+			path = jenkins;
+			sourceTree = "<group>";
+		};
+		5343B3C71D0EDEF7001CC608 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				5343B3C81D0EDEF7001CC608 /* crypt.h */,
+				5343B3C91D0EDEF7001CC608 /* ioapi.c */,
+				5343B3CA1D0EDEF7001CC608 /* ioapi.h */,
+				5343B3CB1D0EDEF7001CC608 /* ioapi_buf.c */,
+				5343B3CC1D0EDEF7001CC608 /* ioapi_buf.h */,
+				5343B3CD1D0EDEF7001CC608 /* ioapi_mem.c */,
+				5343B3CE1D0EDEF7001CC608 /* ioapi_mem.h */,
+				5343B3CF1D0EDEF7001CC608 /* iowin32.c */,
+				5343B3D01D0EDEF7001CC608 /* iowin32.h */,
+				5343B3D11D0EDEF7001CC608 /* README.md */,
+				5343B3D21D0EDEF7001CC608 /* unzip.c */,
+				5343B3D31D0EDEF7001CC608 /* unzip.h */,
+				5343B3D41D0EDEF7001CC608 /* zip.c */,
+				5343B3D51D0EDEF7001CC608 /* zip.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+		5343B3D61D0EDEF7001CC608 /* wildcard */ = {
+			isa = PBXGroup;
+			children = (
+				5343B3D71D0EDEF7001CC608 /* wildcard.c */,
+				5343B3D81D0EDEF7001CC608 /* wildcard.h */,
+			);
+			path = wildcard;
+			sourceTree = "<group>";
+		};
+		5343B3D91D0EDEF7001CC608 /* xxhash */ = {
+			isa = PBXGroup;
+			children = (
+				5343B3DA1D0EDEF7001CC608 /* LICENSE */,
+				5343B3DB1D0EDEF7001CC608 /* xxhash.c */,
+				5343B3DC1D0EDEF7001CC608 /* xxhash.h */,
+			);
+			path = xxhash;
+			sourceTree = "<group>";
+		};
+		5343B3DD1D0EDEF7001CC608 /* xyssl */ = {
+			isa = PBXGroup;
+			children = (
+				5343B3DE1D0EDEF7001CC608 /* gpl-2.0.txt */,
+				5343B3DF1D0EDEF7001CC608 /* include */,
+				5343B3F81D0EDEF7001CC608 /* src */,
+			);
+			path = xyssl;
+			sourceTree = "<group>";
+		};
+		5343B3DF1D0EDEF7001CC608 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				5343B3E01D0EDEF7001CC608 /* aes.h */,
+				5343B3E11D0EDEF7001CC608 /* arc4.h */,
+				5343B3E21D0EDEF7001CC608 /* base64.h */,
+				5343B3E31D0EDEF7001CC608 /* bignum.h */,
+				5343B3E41D0EDEF7001CC608 /* bn_mul.h */,
+				5343B3E51D0EDEF7001CC608 /* certs.h */,
+				5343B3E61D0EDEF7001CC608 /* config.h */,
+				5343B3E71D0EDEF7001CC608 /* debug.h */,
+				5343B3E81D0EDEF7001CC608 /* des.h */,
+				5343B3E91D0EDEF7001CC608 /* dhm.h */,
+				5343B3EA1D0EDEF7001CC608 /* havege.h */,
+				5343B3EB1D0EDEF7001CC608 /* md2.h */,
+				5343B3EC1D0EDEF7001CC608 /* md4.h */,
+				5343B3ED1D0EDEF7001CC608 /* md5.h */,
+				5343B3EE1D0EDEF7001CC608 /* net.h */,
+				5343B3EF1D0EDEF7001CC608 /* openssl.h */,
+				5343B3F01D0EDEF7001CC608 /* padlock.h */,
+				5343B3F11D0EDEF7001CC608 /* rsa.h */,
+				5343B3F21D0EDEF7001CC608 /* sha1.h */,
+				5343B3F31D0EDEF7001CC608 /* sha2.h */,
+				5343B3F41D0EDEF7001CC608 /* sha4.h */,
+				5343B3F51D0EDEF7001CC608 /* ssl.h */,
+				5343B3F61D0EDEF7001CC608 /* timing.h */,
+				5343B3F71D0EDEF7001CC608 /* x509.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		5343B3F81D0EDEF7001CC608 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				5343B3F91D0EDEF7001CC608 /* aes.c */,
+				5343B3FA1D0EDEF7001CC608 /* arc4.c */,
+				5343B3FB1D0EDEF7001CC608 /* base64.c */,
+				5343B3FC1D0EDEF7001CC608 /* bignum.c */,
+				5343B3FD1D0EDEF7001CC608 /* certs.c */,
+				5343B3FE1D0EDEF7001CC608 /* debug.c */,
+				5343B3FF1D0EDEF7001CC608 /* des.c */,
+				5343B4001D0EDEF7001CC608 /* dhm.c */,
+				5343B4011D0EDEF7001CC608 /* havege.c */,
+				5343B4021D0EDEF7001CC608 /* md2.c */,
+				5343B4031D0EDEF7001CC608 /* md4.c */,
+				5343B4041D0EDEF7001CC608 /* md5.c */,
+				5343B4051D0EDEF7001CC608 /* net.c */,
+				5343B4061D0EDEF7001CC608 /* padlock.c */,
+				5343B4071D0EDEF7001CC608 /* rsa.c */,
+				5343B4081D0EDEF7001CC608 /* sha1.c */,
+				5343B4091D0EDEF7001CC608 /* sha2.c */,
+				5343B40A1D0EDEF7001CC608 /* sha4.c */,
+				5343B40B1D0EDEF7001CC608 /* ssl_cli.c */,
+				5343B40C1D0EDEF7001CC608 /* ssl_srv.c */,
+				5343B40D1D0EDEF7001CC608 /* ssl_tls.c */,
+				5343B40E1D0EDEF7001CC608 /* timing.c */,
+				5343B40F1D0EDEF7001CC608 /* x509parse.c */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		5343B4101D0EDEF7001CC608 /* zlib */ = {
+			isa = PBXGroup;
+			children = (
+				5343B4111D0EDEF7001CC608 /* adler32.c */,
+				5343B4121D0EDEF7001CC608 /* crc32.h */,
+				5343B4131D0EDEF7001CC608 /* deflate.c */,
+				5343B4141D0EDEF7001CC608 /* deflate.h */,
+				5343B4151D0EDEF7001CC608 /* gzclose.c */,
+				5343B4161D0EDEF7001CC608 /* gzguts.h */,
+				5343B4171D0EDEF7001CC608 /* gzlib.c */,
+				5343B4181D0EDEF7001CC608 /* gzread.c */,
+				5343B4191D0EDEF7001CC608 /* gzwrite.c */,
+				5343B41A1D0EDEF7001CC608 /* infback.c */,
+				5343B41B1D0EDEF7001CC608 /* inffast.c */,
+				5343B41C1D0EDEF7001CC608 /* inffast.h */,
+				5343B41D1D0EDEF7001CC608 /* inffixed.h */,
+				5343B41E1D0EDEF7001CC608 /* inflate.c */,
+				5343B41F1D0EDEF7001CC608 /* inflate.h */,
+				5343B4201D0EDEF7001CC608 /* inftrees.c */,
+				5343B4211D0EDEF7001CC608 /* inftrees.h */,
+				5343B4221D0EDEF7001CC608 /* README */,
+				5343B4231D0EDEF7001CC608 /* trees.c */,
+				5343B4241D0EDEF7001CC608 /* trees.h */,
+				5343B4251D0EDEF7001CC608 /* uncompr.c */,
+				5343B4261D0EDEF7001CC608 /* zcompress.c */,
+				5343B4271D0EDEF7001CC608 /* zconf.h */,
+				5343B4281D0EDEF7001CC608 /* zcrc32.c */,
+				5343B4291D0EDEF7001CC608 /* zlib.h */,
+				5343B42A1D0EDEF7001CC608 /* zutil.c */,
+				5343B42B1D0EDEF7001CC608 /* zutil.h */,
+			);
+			path = zlib;
+			sourceTree = "<group>";
+		};
+		53FAC1C01CF02E91000243BA = {
+			isa = PBXGroup;
+			children = (
+				53FAC1CB1CF02E91000243BA /* xpack */,
+				53FAC1CA1CF02E91000243BA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		53FAC1CA1CF02E91000243BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53FAC1C91CF02E91000243BA /* xpack */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53FAC1CB1CF02E91000243BA /* xpack */ = {
+			isa = PBXGroup;
+			children = (
+				530243C71D12E9D6002A9130 /* tests */,
+				5343B3A31D0EDEF7001CC608 /* src */,
+			);
+			path = xpack;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		53FAC1C81CF02E91000243BA /* xpack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53FAC1D01CF02E91000243BA /* Build configuration list for PBXNativeTarget "xpack" */;
+			buildPhases = (
+				530F4C5E1D129354001D33DF /* ShellScript */,
+				53FAC1C51CF02E91000243BA /* Sources */,
+				53FAC1C61CF02E91000243BA /* Frameworks */,
+				53FAC1C71CF02E91000243BA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = xpack;
+			productName = xpack;
+			productReference = 53FAC1C91CF02E91000243BA /* xpack */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		53FAC1C11CF02E91000243BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Luwei;
+				TargetAttributes = {
+					53FAC1C81CF02E91000243BA = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = 53FAC1C41CF02E91000243BA /* Build configuration list for PBXProject "xpack" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 53FAC1C01CF02E91000243BA;
+			productRefGroup = 53FAC1CA1CF02E91000243BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				53FAC1C81CF02E91000243BA /* xpack */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		530F4C5E1D129354001D33DF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		53FAC1C51CF02E91000243BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5343B4921D0EDEF7001CC608 /* torch-console.cpp in Sources */,
+				5343B47A1D0EDEF7001CC608 /* sha1.c in Sources */,
+				5343B49F1D0EDEF7001CC608 /* xpack-header.cpp in Sources */,
+				5343B4741D0EDEF7001CC608 /* md2.c in Sources */,
+				5343B4751D0EDEF7001CC608 /* md4.c in Sources */,
+				5343B48B1D0EDEF7001CC608 /* inftrees.c in Sources */,
+				5343B4791D0EDEF7001CC608 /* rsa.c in Sources */,
+				5343B4701D0EDEF7001CC608 /* debug.c in Sources */,
+				5343B47B1D0EDEF7001CC608 /* sha2.c in Sources */,
+				5343B47F1D0EDEF7001CC608 /* ssl_tls.c in Sources */,
+				5343B4551D0EDEF7001CC608 /* shell.cpp in Sources */,
+				5343B4851D0EDEF7001CC608 /* gzlib.c in Sources */,
+				5343B45E1D0EDEF7001CC608 /* torch-hash.cpp in Sources */,
+				5343B4581D0EDEF7001CC608 /* torch-collection-sortedset.cpp in Sources */,
+				533D8BAA1D0F8E08003E2C62 /* torch-memorypool.cpp in Sources */,
+				5343B4961D0EDEF7001CC608 /* torch-string.cpp in Sources */,
+				5343B45B1D0EDEF7001CC608 /* torch-allocator.cpp in Sources */,
+				5343B45D1D0EDEF7001CC608 /* torch-endian.cpp in Sources */,
+				5343B4A31D0EDEF7001CC608 /* xpack.cpp in Sources */,
+				5343B4991D0EDEF7001CC608 /* xpack-base.cpp in Sources */,
+				5343B4611D0EDEF7001CC608 /* lookup3.c in Sources */,
+				530243D11D12E9D6002A9130 /* test-hash.cpp in Sources */,
+				5343B4871D0EDEF7001CC608 /* gzwrite.c in Sources */,
+				5343B4901D0EDEF7001CC608 /* zutil.c in Sources */,
+				5343B4841D0EDEF7001CC608 /* gzclose.c in Sources */,
+				5343B4811D0EDEF7001CC608 /* x509parse.c in Sources */,
+				5343B4891D0EDEF7001CC608 /* inffast.c in Sources */,
+				5343B4671D0EDEF7001CC608 /* unzip.c in Sources */,
+				5343B4731D0EDEF7001CC608 /* havege.c in Sources */,
+				5343B47C1D0EDEF7001CC608 /* sha4.c in Sources */,
+				5343B45C1D0EDEF7001CC608 /* torch-base.cpp in Sources */,
+				5343B4911D0EDEF7001CC608 /* torch-arguments.cpp in Sources */,
+				5343B4821D0EDEF7001CC608 /* adler32.c in Sources */,
+				5343B4571D0EDEF7001CC608 /* torch-collection-iterator.cpp in Sources */,
+				5343B4861D0EDEF7001CC608 /* gzread.c in Sources */,
+				5343B49A1D0EDEF7001CC608 /* xpack-block.cpp in Sources */,
+				5343B46E1D0EDEF7001CC608 /* bignum.c in Sources */,
+				5343B4A21D0EDEF7001CC608 /* xpack-stream.cpp in Sources */,
+				5343B4781D0EDEF7001CC608 /* padlock.c in Sources */,
+				5343B4A11D0EDEF7001CC608 /* xpack-signature.cpp in Sources */,
+				530243D71D12E9D6002A9130 /* test.cpp in Sources */,
+				5343B4A01D0EDEF7001CC608 /* xpack-name.cpp in Sources */,
+				5343B47E1D0EDEF7001CC608 /* ssl_srv.c in Sources */,
+				5343B4711D0EDEF7001CC608 /* des.c in Sources */,
+				5343B46D1D0EDEF7001CC608 /* base64.c in Sources */,
+				5343B4801D0EDEF7001CC608 /* timing.c in Sources */,
+				5343B46C1D0EDEF7001CC608 /* arc4.c in Sources */,
+				5343B4981D0EDEF7001CC608 /* torch-wildcard.cpp in Sources */,
+				5343B4621D0EDEF7001CC608 /* ioapi.c in Sources */,
+				5343B4931D0EDEF7001CC608 /* torch-data.cpp in Sources */,
+				530243D01D12E9D6002A9130 /* test-block.cpp in Sources */,
+				5343B4631D0EDEF7001CC608 /* ioapi_buf.c in Sources */,
+				530243D31D12E9D6002A9130 /* test-name.cpp in Sources */,
+				5343B48F1D0EDEF7001CC608 /* zcrc32.c in Sources */,
+				530243D41D12E9D6002A9130 /* test-signature.cpp in Sources */,
+				5343B48C1D0EDEF7001CC608 /* trees.c in Sources */,
+				5343B4721D0EDEF7001CC608 /* dhm.c in Sources */,
+				5343B4831D0EDEF7001CC608 /* deflate.c in Sources */,
+				5343B4761D0EDEF7001CC608 /* md5.c in Sources */,
+				5343B49B1D0EDEF7001CC608 /* xpack-content.cpp in Sources */,
+				5343B45A1D0EDEF7001CC608 /* torch-compress-zip.cpp in Sources */,
+				5343B48A1D0EDEF7001CC608 /* inflate.c in Sources */,
+				5343B4941D0EDEF7001CC608 /* torch-file.cpp in Sources */,
+				5343B4591D0EDEF7001CC608 /* torch-collection-util.cpp in Sources */,
+				5343B46F1D0EDEF7001CC608 /* certs.c in Sources */,
+				5343B4661D0EDEF7001CC608 /* README.md in Sources */,
+				5343B47D1D0EDEF7001CC608 /* ssl_cli.c in Sources */,
+				5343B46B1D0EDEF7001CC608 /* aes.c in Sources */,
+				5343B49D1D0EDEF7001CC608 /* xpack-util.cpp in Sources */,
+				5343B4691D0EDEF7001CC608 /* wildcard.c in Sources */,
+				5343B4641D0EDEF7001CC608 /* ioapi_mem.c in Sources */,
+				5343B46A1D0EDEF7001CC608 /* xxhash.c in Sources */,
+				5343B4561D0EDEF7001CC608 /* torch-collection-hashmap.cpp in Sources */,
+				5343B4601D0EDEF7001CC608 /* torch-crypto-rc4.cpp in Sources */,
+				5343B48E1D0EDEF7001CC608 /* zcompress.c in Sources */,
+				5343B4681D0EDEF7001CC608 /* zip.c in Sources */,
+				5343B4881D0EDEF7001CC608 /* infback.c in Sources */,
+				5343B4771D0EDEF7001CC608 /* net.c in Sources */,
+				5343B45F1D0EDEF7001CC608 /* torch-crypto-crc32.cpp in Sources */,
+				5343B49E1D0EDEF7001CC608 /* xpack-hash.cpp in Sources */,
+				5343B49C1D0EDEF7001CC608 /* xpack-context.cpp in Sources */,
+				5343B4951D0EDEF7001CC608 /* torch-path.cpp in Sources */,
+				5343B48D1D0EDEF7001CC608 /* uncompr.c in Sources */,
+				5343B4971D0EDEF7001CC608 /* torch-util.cpp in Sources */,
+				5343B4651D0EDEF7001CC608 /* iowin32.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		53FAC1CE1CF02E91000243BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					XPACK_TEST_NO,
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		53FAC1CF1CF02E91000243BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		53FAC1D11CF02E91000243BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		53FAC1D21CF02E91000243BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		53FAC1C41CF02E91000243BA /* Build configuration list for PBXProject "xpack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53FAC1CE1CF02E91000243BA /* Debug */,
+				53FAC1CF1CF02E91000243BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53FAC1D01CF02E91000243BA /* Build configuration list for PBXNativeTarget "xpack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53FAC1D11CF02E91000243BA /* Debug */,
+				53FAC1D21CF02E91000243BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 53FAC1C11CF02E91000243BA /* Project object */;
+}

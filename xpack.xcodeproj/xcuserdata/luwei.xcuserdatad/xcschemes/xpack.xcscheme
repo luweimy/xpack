@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "0710"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "53FAC1C81CF02E91000243BA"
+               BuildableName = "xpack"
+               BlueprintName = "xpack"
+               ReferencedContainer = "container:xpack.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <Testables>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "53FAC1C81CF02E91000243BA"
+            BuildableName = "xpack"
+            BlueprintName = "xpack"
+            ReferencedContainer = "container:xpack.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "53FAC1C81CF02E91000243BA"
+            BuildableName = "xpack"
+            BlueprintName = "xpack"
+            ReferencedContainer = "container:xpack.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = "madd "
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "tmp"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "-f"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "-z"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "HISTORY                              Python.h                             QueryHandler.cpp                     Quest.cpp                            Quest.h                              QuestCommands.cpp                    QuestHandler.cpp                     QuestMgr.cpp                         QuestMgr.h                           Queue.py                             Queue.pyc                            README                               README.md                            RaidHandler.cpp                      RecallCommands.cpp                   Recipe                               ReputationHandler.cpp                ResourceLimits.h                     Rogue.cpp                            Rogue.h                              SBaseCommon.cpp                      SBaseDumpData.cpp                    SBaseFileTable.cpp                   SBaseSubTypes.cpp                    SCompression.cpp                     SFileAddFile.cpp                     SFileAttributes.cpp                  SFileCompactArchive.cpp              SFileCreateArchive.cpp               SFileExtractFile.cpp                 SFileFindFile.cpp                    SFileGetFileInfo.cpp                 SFileListFile.cpp                    SFileOpenArchive.cpp                 SFileOpenFileEx.cpp                  SFilePatchArchives.cpp               SFileReadFile.cpp                    SFileVerify.cpp                      STL.h                                ScriptMgr.cpp                        ScriptMgr.h                          ScriptSetup.h                        Shaman.cpp                           Shaman.h                             SimpleHTTPServer.py                  SimpleHTTPServer.pyc                 SimpleXMLRPCServer.py                Skill.h                              SkillNameMgr.h                       SocialHandler.cpp                    SocketServer.py                      SocketServer.pyc                     SpeedDetector.cpp                    SpeedDetector.h                      Spell.cpp                            Spell.h                              SpellAuras.cpp                       SpellAuras.h                         SpellEffects.cpp                     SpellFailure.h                       SpellHandler.cpp                     SpellMgr.cpp                         SpellMgr.h                           SpellNameHashes.h                    SpellProc.cpp                        SpellProc.h                          SpellProc_DeathKnight.cpp            SpellProc_Druid.cpp                  SpellProc_Hunter.cpp                 SpellProc_Items.cpp                  SpellProc_Mage.cpp                   SpellProc_Paladin.cpp                SpellProc_Priest.cpp                 SpellProc_Rogue.cpp                  SpellProc_Shaman.cpp                 SpellProc_Warlock.cpp                SpellProc_Warrior.cpp                SpellTarget.cpp                      SpellTarget.h                        Spell_DeathKnight.cpp                Spell_Druid.cpp                      Spell_Hunter.cpp                     Spell_Mage.cpp                       Spell_Paladin.cpp                    Spell_Priest.cpp                     Spell_Rogue.cpp                      Spell_Shaman.cpp                     Spell_Warlock.cpp                    Spell_Warrior.cpp                    Stats.cpp                            Stats.h                              StdAfx.cpp                           StdAfx.h                             StormCommon.h                        StormLib.h                           StormPort.h                          StringIO.py                          StringIO.pyc                         SummonHandler.cpp                    SummonHandler.h                      TaxiHandler.cpp                      TaxiMgr.cpp                          TaxiMgr.h                            TerrainMgr.cpp                       TerrainMgr.h                         Threads.c                            Threads.h                            Tix.py                               Tkconstants.py                       Tkdnd.py                             Tkinter.py                           TradeHandler.cpp                     TransporterHandler.cpp               TransporterHandler.h                 TypeMetric.h                         Types.h                              Unit.cpp                             Unit.h                               UpdateFields.h                       UpdateMask.h                         UserDict.py                          UserDict.pyc                         UserList.py                          UserString.py                        Vehicle.cpp                          Vehicle.h                            VehicleHandler.cpp                   VoiceChatHandler.cpp                 WUtil.cpp                            WUtil.h                              Warlock.cpp                          Warlock.h                            Warrior.cpp                          Warrior.h                            WayPoints.cpp                        WeatherMgr.cpp                       WeatherMgr.h                         WordFilter.cpp                       WordFilter.h                         World.cpp                            World.h                              WorldCreator.cpp                     WorldCreator.h                       WorldRunnable.cpp                    WorldRunnable.h                      WorldSession.cpp                     WorldSession.h                       WorldSocket.cpp                      WorldSocket.h                        WorldStates.h                        WorldStatesHandler.cpp               WorldStatesHandler.h                 _LWPCookieJar.py                     _MozillaCookieJar.py                 __future__.py                        __future__.pyc                       __init__.pyc                         __phello__.foo.py                    _abcoll.py                           _locale_64_.py                       _locale_cache.py                     _osx_support.py                      _pyio.py                             _resource_64_.py                     _resource_cache.py                   _strptime.py                         _strptime.pyc                        _threading_local.py                  _weakrefset.py                       abc.py                               abspath.c                            abstract.h                           accelerate.h                         acl-internal.h                       acl.h                                acl_entries.c                        aclocal.m4                           add.c                                ads_newyear_1223.jpg                 ads_newyear_jintiao_1224.jpg         ads_oppo_newmatch_1230_3.jpg         ads_star_master_1119.jpg             ads_wandezhou_1228.jpg               advice.c                             advice.h                             aifc.py                              aix.c                                alias.c                              aliases.py                           aliases.pyc                          alignof.h                            alloc.c                              alloca.c                             alloca.in.h                          allocator.c                          allocator.h                          am.c                                 android-ifaddrs.c                    animate.h                            annotate.c                           annotate.h                           antigravity.py                       anydbm.py                            anytostr.c                           api.h                                apply.c                              ar-lib                               archive-tar.c                        archive-zip.c                        archive.c                            archive.h                            areadlink-with-size.c                areadlink.c                          areadlink.h                          areadlinkat.c                        arena.cc                             argmatch.c                           argmatch.h                           argparse.py                          argv-array.c                         argv-array.h                         argv-iter.c                          argv-iter.h                          arpa_inet.in.h                       array.py                             array.pyc                            artifact.h                           ascii.py                             ascii.pyc                            asnprintf.c                          asprintf.c                           ast.py                               async.c                              asynchat.py                          asyncore.py                          at-func.c                            atexit.py                            atexit.pyc                           atomic-ops.h                         atomicops-inl.h                      attr.c                               attr.h                               attribute.h                          audiodev.py                          backupfile.c                         backupfile.h                         base64.c                             base64.h                             base64.py                            base64.pyc                           base64_codec.py                      base64_decode.c                      base85.c                             basename-lgpl.c                      basename.c                           basics.py                            basics.pyc                           bdb.py                               bdb.pyc                              be_all.c                             be_all_s.c                           be_all_s.o                           be_none.c                            be_nos_s.c                           be_nossh.c                           be_ssh.c                             big5.py                              big5hkscs.py                         binary-io.c                          binary-io.h                          binhex.py                            bisect--helper.c                     bisect.c                             bisect.h                             bisect.py                            bisect.pyc                           bitrotate.h                          blame.c                              blob.c                               blob.h                               bloom.cc                             bn_fast_mp_invmod.c                  bn_fast_mp_montgomery_reduce.c       bn_fast_s_mp_mul_digs.c              bn_fast_s_mp_mul_high_digs.c         bn_fast_s_mp_sqr.c                   bn_mp_2expt.c                        bn_mp_abs.c                          bn_mp_add.c                          bn_mp_add_d.c                        bn_mp_addmod.c                       bn_mp_and.c                          bn_mp_clamp.c                        bn_mp_clear.c                        bn_mp_clear_multi.c                  bn_mp_cmp.c                          bn_mp_cmp_d.c                        bn_mp_cmp_mag.c                      bn_mp_cnt_lsb.c                      bn_mp_copy.c                         bn_mp_count_bits.c                   bn_mp_div.c                          bn_mp_div_2d.c                       bn_mp_div_3.c                        bn_mp_div_d.c                        bn_mp_dr_is_modulus.c                bn_mp_dr_reduce.c                    bn_mp_dr_setup.c                     bn_mp_exch.c                         bn_mp_expt_d.c                       bn_mp_exptmod.c                      bn_mp_exptmod_fast.c                 bn_mp_exteuclid.c                    bn_mp_fread.c                        bn_mp_fwrite.c                       bn_mp_gcd.c                          bn_mp_get_int.c                      bn_mp_grow.c                         bn_mp_init.c                         bn_mp_init_copy.c                    bn_mp_init_multi.c                   bn_mp_init_set.c                     bn_mp_init_set_int.c                 bn_mp_init_size.c                    bn_mp_invmod.c                       bn_mp_invmod_slow.c                  bn_mp_is_square.c                    bn_mp_jacobi.c                       bn_mp_karatsuba_mul.c                bn_mp_karatsuba_sqr.c                bn_mp_lcm.c                          bn_mp_lshd.c                         bn_mp_mod.c                          bn_mp_mod_2d.c                       bn_mp_mod_d.c                        bn_mp_montgomery_calc_normalization.c bn_mp_montgomery_reduce.c            bn_mp_montgomery_setup.c             bn_mp_mul.c                          bn_mp_mul_2d.c                       bn_mp_mul_d.c                        bn_mp_mulmod.c                       bn_mp_n_root.c                       bn_mp_neg.c                          bn_mp_or.c                           bn_mp_prime_fermat.c                 bn_mp_prime_is_divisible.c           bn_mp_prime_is_prime.c               bn_mp_prime_miller_rabin.c           bn_mp_prime_next_prime.c             bn_mp_prime_rabin_miller_trials.c    bn_mp_prime_random_ex.c              bn_mp_radix_size.c                   bn_mp_radix_smap.c                   bn_mp_rand.c                         bn_mp_read_radix.c                   bn_mp_read_signed_bin.c              bn_mp_read_unsigned_bin.c            bn_mp_reduce.c                       bn_mp_reduce_2k.c                    bn_mp_reduce_2k_l.c                  bn_mp_reduce_2k_setup.c              bn_mp_reduce_2k_setup_l.c            bn_mp_reduce_is_2k.c                 bn_mp_reduce_is_2k_l.c               bn_mp_reduce_setup.c                 bn_mp_rshd.c                         bn_mp_set.c                          bn_mp_set_int.c                      bn_mp_shrink.c                       bn_mp_signed_bin_size.c              bn_mp_sqr.c                          bn_mp_sqrmod.c                       bn_mp_sqrt.c                         bn_mp_sub.c                          bn_mp_sub_d.c                        bn_mp_submod.c                       bn_mp_to_signed_bin.c                bn_mp_to_signed_bin_n.c              bn_mp_to_unsigned_bin.c              bn_mp_to_unsigned_bin_n.c            bn_mp_toom_mul.c                     bn_mp_toom_sqr.c                     bn_mp_toradix.c                      bn_mp_toradix_n.c                    bn_mp_unsigned_bin_size.c            bn_mp_xor.c                          bn_mp_zero.c                         bn_prime_tab.c                       bn_reverse.c                         bn_s_mp_add.c                        bn_s_mp_exptmod.c                    bn_s_mp_mul_digs.c                   bn_s_mp_mul_high_digs.c              bn_s_mp_sqr.c                        bn_s_mp_sub.c                        bncore.c                             boolobject.h                         branch.c                             btowc.c                              buffer-lcm.c                         "
+            isEnabled = "YES">
+         </CommandLineArgument>
+      </CommandLineArguments>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "53FAC1C81CF02E91000243BA"
+            BuildableName = "xpack"
+            BlueprintName = "xpack"
+            ReferencedContainer = "container:xpack.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>

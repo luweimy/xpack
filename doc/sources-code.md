@@ -1,4 +1,4 @@
-##源码说明
+## 源码说明
 [文档主页](./index.md)   
 
 ### 文件
@@ -43,7 +43,7 @@ class Package-|-context
 
 ```
 
-###存储结构：
+### 存储结构：
 [文件结构](./package-sct.md)   
 ```
 |- Signature // 签名区段，保存签名等信息，用于在文件内定位资源包的偏移量
@@ -74,7 +74,7 @@ class Package-|-context
 + NameSegment      - 管理文件名信息的存取和添加删除等
 
 
-###数据存储
+### 数据存储
 ```
 typedef struct {
     uint32_t    hash;           /* hashid */
@@ -106,32 +106,32 @@ typedef struct {
 
 一个MetaHash如何记录文件对应的多个MetaBlock呢？就是使用next_index，类似于链表，如果文件真分块存在不同的地方则next_index指向下一个MetaBlock，直到最终next_index为-1，就知道没有下一块了，将之前的所有块拼接起来就是文件的所有内容。  
 
-###数据流程
+### 数据流程
 
 `xpack.h`定义的是对外提供的api接口，基本的增删改查都可以在这里找到  
 
-#####加载
+##### 加载
 1. 通过signature模块，在文件中搜索签名标记，找到后记录当前签名位置的offset（签名要求对齐到512Byte）
 2. 读取Header信息，校验Header合法性
 3. 读取blocks信息，加载文件存储的分块信息数据
 4. 读取hashs信息，加载文件索引信息数据
 5. 读取names信息，加载文件名信息 
 
-#####添加
+##### 添加
 1. 向hash模块申请一个hash索引记录`(MetaHash)`，注意重名失败
 2. 向block模块申请一个合适尺寸的文件块记录链(记录结构MetaBlock是链表；其优先重用废弃块)
 3. content模块根据申请的文件块记录链，将文件数据写入到content区段
 4. 将文件名加入到names区域
 5. 将block链表头index和name的存储位置，放入对应hash索引记录中存储
 
-#####删除
+##### 删除
 1. 通过hash模块，查找要删除的文件索引记录(MetaHash)
 2. 通过block模块，根据索引记录(MetaHash)将其分块全部删除或者加入重用集合
 3. 通过name模块，根据索引记录(MetaHash)将文件名删除
 4. 最后将索引记录(MetaHash)删除
 
-###关键实现
-#####文件解冲突
+### 关键实现
+##### 文件解冲突
 **实现见HashSegment::AddNew**    
 
 思路：通过递归实现，若文件冲突则将其在冲突的索引记录处标记`CONFLICT`，并且生成一个种子存放于冲突的索引记录salt处，重新使用新种子对文件名进行hash，递归进行之前的步骤，直到没有冲突为止。    
@@ -140,7 +140,7 @@ typedef struct {
 
 注意：删除时也要一层一层都删除干净，为避免多个冲突到同一位置造成多引用问题，使用MetaHash.conflict_refc记录冲突引用数量，只有当conflict_refc为0时才能删除。  
 
-#####文件分块存储
+##### 文件分块存储
 **实现见BlockSegment::AllocLinkedBlock**    
 
 注意：这里的重用分两种：

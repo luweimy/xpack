@@ -1,7 +1,7 @@
-##shell命令   
+## shell命令   
 [文档主页](./index.md)   
 
-###xpack命令结构
+### xpack命令结构
 xpack命令是主命令，其包含若干子命令，每个命令(包含主命令和子命令)都可以通过options: -h来打印文档。    
 #####xpack命令本身有两个options 
 ```
@@ -9,7 +9,7 @@ xpack命令是主命令，其包含若干子命令，每个命令(包含主命�
 -v  : 显示版本信息
 ```
 
-#####xpack 命令分为若干子命令
+##### xpack 命令分为若干子命令
 ```
 add      : 向包中添加文件(仅能添加一个)，可以指定添加文件在包中存储的名称
 madd     : 同时向包中添加多个文件，不能指定添加文件在包中存储的名称。例如：xpack madd package file1 file2 file3 ...; xpack madd package *
@@ -25,7 +25,7 @@ optimize : 优化xpack包。即重新构建一个新包，将数据重新写入�
 diff     : 打印两个xpack包的对比分析数据。
 ```
 
-#####子命令用法
+##### 子命令用法
 ```
 xpack add      <package> <file> [options]
 xpack madd     <package> <file> [file ...] [options]
@@ -41,7 +41,7 @@ xpack optimize <package> [options]
 xpack diff     <main-package> <other-package> [options]
 ```
 
-#####帮助  
+##### 帮助  
 xpack -h    
 
 ```
